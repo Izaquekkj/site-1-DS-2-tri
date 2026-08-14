@@ -5,19 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
     <style>
-header{
-background-color:#071955;
-color:#DEC1F0;
-}
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #071955;
+            color: #f8f6f9;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        input[type="text"] {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            width: 250px;
+            max-width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-left: 8px;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #071955;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Imagens */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 
 <body>
-    <h1>Faz o L</h1>
-    <p>aperte aqui para mais informações</p>
-    <input type="text">
-    <button>aperte aqui</button>
-    <h2>Meu programa </h2>
-    <p>Por: Emanuel Izaque</p>
+
+    <header>
+        <h1>Jogos Recém-lançados pela Steam</h1>
+        <p>Aperte aqui para mais informações</p>
+        <div>
+            <input type="text" placeholder="Buscar jogos...">
+            <button>Pesquisar</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Os jogos lançados</h2>
+        <p class="autor">Por: Emanuel Izaque</p>
+    </main>
+
 </body>
 </html>
